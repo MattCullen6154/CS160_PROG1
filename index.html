@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ELECTRIC TIME</title>
+        <link rel="stylesheet" href="style.css">
+    </head> 
+    <body> 
+        <header>
+            <h1>ELECTRIC TIME</h1>
+        </header>
+
+        <div class="converter">
+            <label for="distance">How far are you going?</label>
+            <input type="number" id="distance" placeholder="Enter distance in miles">
+        </div>
+        <div class="container" id="time_walking_container">
+            <label for="time_walking">How long will walking take?</label>
+            <input type="text" id="time_walking" readonly placeholder="Travel time (minutes)">
+        </div>
+        <div class="container" id="time_bike_container">
+            <label for="time_evolve">How long will riding the Evolve Bamboo GTR 2-in-1 take?</label>
+            <input type="text" id="time_evolve" readonly placeholder="Travel time (minutes)">
+        </div>
+        <div class="container" id="time_onewheel_container">
+            <label for="time_onewheel">How long will riding the Onewheel GT take?</label>
+            <input type="text" id="time_onewheel" readonly placeholder="Travel time (minutes)">
+        </div>
+        <div class="container" id="time_razor_container">
+            <label for="time_razor">How long will riding the Razor E Prime III take?</label>
+            <input type="text" id="time_razor" readonly placeholder="Travel time (minutes)">
+        </div>
+        <button id="calculate">Calculate</button>
+
+        <script src="script.js"></script>
+    </body>
+</html>
