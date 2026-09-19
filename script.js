@@ -41,8 +41,8 @@ modeButtons.forEach(function (button) {
     });
 });
 
-distanceInput.addEventListener("keydown", function (event) {
-    if (event.key === "Enter") {
+document.addEventListener("keydown", function (event) {
+    if (event.key === "Enter" && !event.shiftKey && !event.metaKey && !event.ctrlKey && !event.altKey) {
         calculateButton.click();
     }
 });
